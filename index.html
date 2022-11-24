@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/alegreya-v29-latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   
-  <script>
+  <script async>
     // Adobe Target pre-hiding code snippet 
     ;(function(win, doc, style, timeout) {
       var STYLE_ID = 'at-body-style';
@@ -50,7 +50,7 @@
       }, timeout);
     }(window, document, "body {opacity: 0 !important}", 3000));
   </script>
-  <script>
+  <script async>
     // advertisment mock
     const initAd = () => {
       const adSpace = document.querySelector('.main__advertising');
@@ -71,7 +71,7 @@
       $('head').append(`<link rel="stylesheet" type="text/css" href="styles/mobile.css">`);
     };
 
-    wait(2000);
+    // wait(2000);
     window.addEventListener('load', () => {
       initAd();
       loadMobileCSS();
